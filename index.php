@@ -18,7 +18,7 @@
 
 <body>
     <div class="inputContainer">
-        <img src="/assets/google.png" alt="” width=”87" height="33">
+        <img src="/assets/google.png" alt="” width=”87" height="33" style="margin-bottom: 14px">
         <h2 class=”login“>Sign in</h2>
         <h4 class="use">Use your Google Account</h4>
         <input type="email" class="gInput">
