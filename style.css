@@ -437,6 +437,7 @@ body {
 }
 
 .forgot {
+    line-height: 1.4286;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
