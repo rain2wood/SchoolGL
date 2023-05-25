@@ -56,6 +56,12 @@
             }
         });
     </script>
+    <div class="bottomContainer">
+        <p class="language">&#x25BC English (United States)</p>
+
+        <a class="hpt">Terms</a>
+        <a class="hpt">Privacy</a>
+        <a class="hpt">Help</a>
 </body>
 
 </html>
