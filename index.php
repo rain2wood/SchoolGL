@@ -26,7 +26,7 @@
         <div class="forgotContainer">
             <h5 class="forgot">Forgot Email?</h5>
         </div>
-        <h4 class="guest">Not your computer? Use Guest mode to sign in privately.<span>Learn more</span></h4>
+        <h4 class="guest">Not your computer? Use Guest mode to sign in privately. <span>Learn more</span></h4>
         <div class="buttonContainer">
             <p class="btnCreate">Create account</p>
             <p class="btnNext">Next</p>
