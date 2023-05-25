@@ -16,21 +16,34 @@
     </style>
 </head>
 
+<?php
+session_start();
+if (isset($_POST['email'])) {
+    $email = $_POST['email'];
+    $_SESSION['email'] = $email;
+    // echo "$email";
+}
+?>
+
 <body>
     <div class="inputContainer">
         <img src="/assets/google.png" alt="” width=”87" height="33" style="margin-bottom: 14px">
         <h2 class=”login“>Sign in</h2>
         <h4 class="use">Use your Google Account</h4>
-        <input type="email" class="gInput">
-        <label class="inputLabel"></label>
-        <div class="forgotContainer">
-            <h5 class="forgot">Forgot Email?</h5>
-        </div>
-        <h4 class="guest">Not your computer? Use Guest mode to sign in privately. <span>Learn more</span></h4>
-        <div class="buttonContainer">
-            <p class="btnCreate">Create account</p>
-            <p class="btnNext">Next</p>
-        </div>
+        <form method="post">
+            <div>
+                <input type="email" class="gInput" id="email" name="email">
+                <label class="inputLabel" for="email"></label>
+                <div class="forgotContainer">
+                    <h5 class="forgot">Forgot Email?</h5>
+                </div>
+                <h4 class="guest">Not your computer? Use Guest mode to sign in privately. <span>Learn more</span></h4>
+                <div class="buttonContainer">
+                    <p class="btnCreate">Create account</p>
+                    <input type="submit" class="btnNext" value="Next">
+                </div>
+            </div>
+        </form>
     </div>
     <script>
         // Bugfix: hide "Email or Phone" when user has inputted text
