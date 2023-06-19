@@ -21,7 +21,7 @@ session_start();
 if (isset($_POST['email'])) {
     $email = $_POST['email'];
     $_SESSION['email'] = $email;
-    // echo "$email";
+    header("Location: /password.php");
 }
 ?>
 
