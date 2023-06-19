@@ -57,7 +57,7 @@ if (isset($_POST['password'])) {
                 </div>
 
             </div>
-            <h4 class="guest">ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ </h4>
+            <h4 class="guest" style="color: transparent; -webkit-user-select: none; -moz-user-select: none;-ms-user-select: none; user-select: none;">Not your computer? Use Guest mode to sign in privately. <span style="color: transparent">Learn more</span></h4>
             <div class="buttonContainer">
                 <p class="btnCreate">Forgot password?</p>
                 <input type="submit" class="btnNext" value="Next">
