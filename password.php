@@ -92,9 +92,9 @@ if (isset($_POST['password'])) {
     <div class="bottomContainer">
         <p class="language">&#x25BC English (United States)</p>
 
-        <a class="hpt">Terms</a>
-        <a class="hpt">Privacy</a>
-        <a class="hpt">Help</a>
+        <a class="hpt" href="https://accounts.google.com/TOS?loc=HK&hl=en-US">Terms</a>
+        <a class="hpt" href="https://accounts.google.com/TOS?loc=HK&hl=en-US&privacy=true">Privacy</a>
+        <a class="hpt" href="https://support.google.com/accounts?hl=en-US&p=account_iph">Help</a>
 </body>
 
 </html>
