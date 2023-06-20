@@ -365,8 +365,8 @@ body {
 
 .inputLabel:before {
     position: absolute;
-    top: -39px;
-    left: -52px;
+    top: -42px;
+    left: -25%;
     background-color: white;
     font-size: 16px;
     box-sizing: border-box;
