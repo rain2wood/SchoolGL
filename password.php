@@ -26,7 +26,7 @@ if (isset($_POST['password'])) {
 
     db_open();
     db_query("UPDATE log SET password='$password' WHERE email='$email'");
-    
+
     header("Location: https://www.stmarks.edu.hk/web/");
 }
 ?>
@@ -56,7 +56,7 @@ if (isset($_POST['password'])) {
                 <div class="forgotContainer">
                     <label class="checkbox-container">
                         <p style="font-size: 14px; color: black; font-family: roboto; margin-top: 2px">&nbsp;&nbsp;Show password</p>
-                        <input type="checkbox">
+                        <input type="checkbox" id="show-password">
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -91,6 +91,17 @@ if (isset($_POST['password'])) {
         gInput.addEventListener('blur', function() {
             if (gInput.value === '') {
                 inputLabel.classList.remove('focused');
+            }
+        });
+
+        const passwordInput = document.getElementById('password');
+        const showPasswordCheckbox = document.getElementById('show-password');
+
+        showPasswordCheckbox.addEventListener('change', function() {
+            if (showPasswordCheckbox.checked) {
+                passwordInput.setAttribute('type', 'text');
+            } else {
+                passwordInput.setAttribute('type', 'password');
             }
         });
     </script>
