@@ -52,7 +52,7 @@ if (isset($_POST['password'])) {
         <form method="post">
             <div>
                 <input type="password" class="gInput" id="password" name="password" style="margin-top: 52px;">
-                <label class="inputLabel" for="email" style="top: 55%;"></label>
+                <label class="inputLabel" for="email" style="top: 54.25%;"></label>
                 <div class="forgotContainer">
                     <label class="checkbox-container">
                         <p style="font-size: 14px; color: black; font-family: roboto; margin-top: 2px">&nbsp;&nbsp;Show password</p>
