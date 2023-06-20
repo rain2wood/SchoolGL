@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/assets/icon.svg">
     <title>Sign in - Google Accounts</title>
     <style>
         /* Override "Email or Phone" text */
